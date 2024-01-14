@@ -1,0 +1,74 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  min-width: 325px;
+  align-items: center;
+  flex-direction: column;
+}
+.content {
+  margin: 25px;
+}
+#pertanyaan {
+  margin-bottom: 10px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+button {
+  border: none;
+  background-color: green;
+  font-size: 24px;
+  padding: 8px 20px;
+  margin-left: 10px;
+  height: 65px;
+  color: white;
+  font-weight: 600;
+}
+button:hover {
+  cursor: pointer;
+  background-color: tomato;
+  transition: 0.1s all ease-in-out;
+}
+input {
+  border: none;
+  background-color: #eaeaea;
+  color: #222222;
+  padding: 8px;
+  font-size: 24px;
+}
+#loaders {
+  display: none;
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  border-top: 15px solid gray;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 9;
+  animation: 1s spin infinite linear;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
